@@ -1,0 +1,602 @@
+:root {
+    --background-opacity: rgba(18, 23, 49, 0.5);
+    --color-primary: #1A2030;
+    --color-secondary: #f5b008;
+    --color-tertiary: #FFFFFF;
+}
+
+body {
+    background-image: url("/img/background.png");
+}
+
+/*####################################################################################################################*/
+/*###################################      MENU DE NAVEGAÇÃO         #################################################*/
+/*####################################################################################################################*/
+header {
+    background-color: var(--background-opacity);
+}
+
+.logo-header img {
+    width: 140px;
+    height: auto;
+}
+
+.menu-list {
+    justify-content: end;
+}
+
+.menu-list li {
+    display: block;
+    padding: 10px;
+}
+
+.link-menu a {
+    color: var(--color-tertiary);
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: uppercase;
+    padding: 8px 15px;
+}
+
+.link-menu a:hover {
+    color: var(--color-secondary);
+}
+
+.menu-icon {
+    background-image: url("/img/menu_icon.png") !important;
+}
+
+/*####################################################################################################################*/
+/*####################################       SOBRE       #############################################################*/
+/*####################################################################################################################*/
+#about {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .container {
+    display: flex;
+    margin: 60px 0 0 0;
+    background: var(--color-primary);
+}
+
+.about-title {
+    width: 50%;
+    text-align: justify;
+    padding: 90px 15px 0 15px;
+}
+
+.about-title h2 {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-about {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+}
+
+.link-about {
+    padding: 20px 45px;
+    color: var(--color-tertiary);
+    text-transform: uppercase;
+    text-decoration: none;
+    border: solid 2px var(--color-tertiary);
+    border-radius: 30px;
+}
+
+.link-about:hover {
+    color: var(--color-secondary);
+    border: solid 2px var(--color-secondary);
+}
+
+.img-about {
+    width: 50%;
+}
+
+.img-about img {
+    width: 100%;
+}
+
+#about h2 {
+    color: var(--color-secondary);
+    padding-bottom: 10px;
+}
+
+.main-p {
+    color: var(--color-tertiary);
+    padding-top: 15px;
+    font-weight: 300;
+}
+
+/*####################################################################################################################*/
+/*############################################      SERVICE       ####################################################*/
+/*####################################################################################################################*/
+
+#service {
+    margin: 60px 0;
+}
+
+#service a {
+    text-decoration: none;
+}
+
+.description-service {
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--color-secondary);
+    background: var(--color-primary);
+    padding: 60px 0;
+    margin-bottom: 30px;
+}
+
+.card-service {
+    position: relative;
+    border-radius: 10px;
+    padding: 20px;
+    overflow: hidden;
+    transition: 0.3s;
+    margin-bottom: 30px;
+    background: var(--color-primary) !important;
+}
+
+.card-service img {
+    position: absolute;
+    top: -22px;
+    left: -22px;
+    width: 110%;
+}
+
+.card-service:hover {
+    transform: scale(1.1);
+    border: 1px solid var(--color-secondary);
+}
+
+.img-bg-service {
+    width: 100%;
+    height: 200px;
+}
+
+.title-box h5 {
+    color: var(--color-tertiary);
+    padding-top: 15px;
+    text-align: center;
+}
+
+/*####################################################################################################################*/
+/*#############################################       CONTATO        #################################################*/
+/*####################################################################################################################*/
+#contact {
+    background: var(--color-primary);
+    border-top: 1px solid var(--color-secondary);
+    border-bottom: 1px solid var(--color-secondary);
+    text-align: center;
+}
+
+#contact .container {
+    background: var(--color-primary);
+    padding: 130px 0;
+}
+
+#contact h2 {
+    width: 100%;
+    color: var(--color-secondary);
+    text-transform: uppercase;
+}
+
+.box-btn-register {
+    display: flex;
+    justify-content: center;
+}
+
+.link-register {
+    padding: 60px 20px 30px 0;
+}
+
+.link-register a {
+    background-color: #333;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: var(--color-tertiary);
+    border: 2px solid #777;
+    border-radius: 25px;
+    padding: 20px 40px;
+}
+
+.link-register i {
+    padding-right: 15px;
+    /*color: var(--color-secondary);*/
+}
+
+.icon-1 {
+    color: #1CAD35;
+    font-size: 20px;
+}
+
+.icon-2 {
+    color: #EE534F;
+    font-size: 17px;
+}
+
+/*####################################################################################################################*/
+/*#######################################      PÁGINA DE CATEGORIA       #############################################*/
+/*####################################################################################################################*/
+#category {
+    padding: 60px 0;
+}
+
+#category h1 {
+    color: var(--color-secondary);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#breadcrumb {
+    width: 100%;
+    padding:  5px 0;
+    text-align: center;
+    text-transform: uppercase;
+    display: inline-block;
+}
+
+#breadcrumb li {
+    display: inline;
+}
+
+#breadcrumb a {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    color: var(--color-tertiary);
+}
+
+#category .container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: 50px;
+}
+
+.box-category {
+    max-width: 540px;
+    background: none!important;
+}
+
+.box-category a {
+    text-decoration: none;
+}
+
+.card-category {
+    background-color: var(--color-primary);
+}
+
+.card-category h5 {
+    color: var(--color-secondary);
+}
+
+.card-category p {
+    color: var(--color-tertiary);
+}
+
+/*####################################################################################################################*/
+/*#############################################       CONTEUDO       #################################################*/
+/*####################################################################################################################*/
+#main-category {
+    padding: 50px 0;
+}
+
+#main-category .container {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 20px;
+}
+
+#box-main-category {
+    width: 70%;
+}
+
+#main-category-img img {
+    width: 100%;
+    border: 1px solid var(--color-secondary);
+}
+
+#main-category h1 {
+    text-align: center;
+    padding: 15px 0;
+    color: var(--color-secondary);
+}
+
+#main-category p {
+    text-align: justify;
+    color: var(--color-tertiary);
+}
+
+#sidebar-category {
+    width: 25%;
+}
+
+#sidebar-category h3 {
+    color: var(--color-secondary);
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+#sidebar-category a {
+    color: var(--color-tertiary);
+    background-color: transparent;
+    border-bottom: 1px solid #666 ;
+    border-top: 0;
+    border-left: 0;
+    border-right:0;
+}
+
+#sidebar-category a:hover {
+    color: var(--color-secondary);
+}
+
+/*####################################################################################################################*/
+/*#############################################       FOOTER        ##################################################*/
+/*####################################################################################################################*/
+#footer {
+    background-color: var(--background-opacity);
+    padding-top: 40px;
+}
+
+#footer .container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#footer ul {
+    padding-left: 0;
+}
+
+.box-footer {
+    width: 33.3%;
+}
+
+.title-h2-footer {
+    padding: 15px 0 22px 0;
+    font-weight: 300;
+    color: var(--color-tertiary);
+}
+
+.title-h2-footer::after {
+    content: '';
+    display: block;
+    width: 100px;
+    height: 2px;
+    background: var(--color-secondary);
+    margin: 5px 0;
+}
+
+.box-list-footer li {
+    padding-bottom: 8px;
+}
+
+.box-list-footer li a {
+    color: var(--color-tertiary);
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.box-list-footer a:hover {
+    color: var(--color-secondary);
+}
+
+.p-footer {
+    padding: 0 0 10px 0;
+    color: var(--color-tertiary);
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+.input-box input {
+    background-color: transparent;
+    height: 45px;
+    border: 1px solid var(--color-tertiary);
+    padding: 0 15px;
+    outline: none;
+    color: var(--color-tertiary);
+}
+
+.input-box input:hover {
+    border: 1px solid var(--color-secondary);
+    background-color: var(--color-primary);
+}
+
+.input-box button {
+    width: 65px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: var(--color-secondary);
+    border: 1px solid var(--color-tertiary);
+    background-color: var(--color-primary);
+}
+
+.input-box button:hover {
+    border: 1px solid var(--color-secondary);
+}
+
+.contact-address li {
+    margin: 10px 0;
+}
+
+.box-footer .contact-address {
+    padding-right: 45px;
+}
+
+.contact-address i {
+    float: left;
+    padding: 3px 10px 3px 0;
+    color: var(--color-secondary);
+    font-size: 15px;
+}
+
+.contact-address a {
+    text-decoration: none;
+    color: var(--color-tertiary);
+    padding: 4px 0;
+}
+
+.contact-address a:hover {
+    color: var(--color-secondary);
+}
+
+#btn-box span {
+    float: left;
+    border-radius: 40px;
+}
+
+.btn-media {
+    background: #f7fafc;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 0 25px 0 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-media a {
+    text-decoration: none;
+}
+
+.btn-media i {
+    background: var(--color-primary);
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-secondary);
+    font-weight: 400;
+}
+
+.btn-media:hover {
+    color: var(--color-secondary);
+    background: var(--color-secondary);
+}
+
+.logo-footer {
+    width: 33.3%;
+}
+
+.logo-footer a {
+    width: 200px;
+    margin: 50px auto 0 auto;
+    display: block;
+}
+
+.logo-footer img {
+    width: 100%;
+}
+
+.info-dev {
+    width: 100%;
+    background-color: var(--color-primary);
+    color: var(--color-tertiary);
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 50px;
+}
+
+.info-dev p {
+    margin: 0;
+    font-size: 14px;
+}
+
+.info-dev a {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+@media (max-width: 1023px) {
+    .box-footer {
+        width: 50%;
+        padding-right: 40px;
+    }
+
+    .input-box {
+        margin-bottom: 20px;
+    }
+
+    .input-box button {
+        width: 45px;
+    }
+
+    .box-footer .contact-address {
+        padding-right: 0;
+    }
+
+    #about .container {
+        flex-direction: column;
+    }
+
+    .about-title {
+        width: 100%;
+        padding: 0 30px 30px 30px;
+        order: 2;
+    }
+
+    .img-about {
+        width: 50%;
+        margin: 0 auto 0 auto;
+        order: 1;
+    }
+}
+
+@media (max-width: 767px) {
+    .box-footer {
+        width: 100%;
+    }
+
+    .img-about {
+        width: 80%;
+    }
+
+    #main-category .container {
+        display: block;
+    }
+
+    #box-main-category {
+        width: 100%;
+    }
+
+    #sidebar-category {
+        width: 50%;
+    }
+}
+
+@media (max-width: 630px) {
+    .img-about {
+        width: 100%;
+    }
+}
+
+@media (max-width: 490px) {
+    .box-btn-register {
+        display: block;
+    }
+
+    .link-register {
+        padding: 40px 0 30px 0;
+    }
+
+    #contato .container {
+        padding: 70px 0;
+    }
+
+    #sidebar-category {
+        width: 100%;
+    }
+}
